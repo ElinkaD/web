@@ -105,6 +105,7 @@ body {
 
 	display: flex;
 	flex-wrap: wrap;
+
 	justify-content: space-around;
 }
 
@@ -117,6 +118,7 @@ body {
 	background: rgba(254, 250, 224, 0.8);
 	border-radius: 15px;
 }
+
 .points {
 	height: 45%;
 	width: 85%;
@@ -128,12 +130,14 @@ body {
 	display: block;
 	margin-bottom: 3%;
 }
+
 .search_bar {
 	background: rgba(254, 250, 224, 0.5);
 	border-radius: 10px;
 	width: 80%;
 	display: inline-block;
 }
+
 .search_bar input {
 	border: none;
 	outline: none;
@@ -143,13 +147,15 @@ body {
 	line-height: 21px;
 	height: 35px;
 }
+
 .stroka {
 	background: transparent;
 	height: 100%;
 	width: 70%;
 	padding-left: 30px;
 }
-.search_but{
+
+.search_but {
 	float: right;
 	height: 100%;
 	width: 20%;
@@ -157,8 +163,9 @@ body {
 	background: #FEFAE0CC;
 	border-radius: 10px;
 }
+
 .search_but:hover {
-	background:#D4A373;
+	background: #D4A373;
 	color: white;
 }
 
@@ -176,12 +183,13 @@ body {
 }
 
 
-.menu{
+.menu {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.menu div{
+
+.menu div {
 	background: transparent;
 	min-width: 18%;
 
@@ -189,37 +197,45 @@ body {
 	text-align: center;
 
 }
-.menu div p{
+
+.menu div p {
 	background: rgba(254, 250, 224, 0.8);
 	border-radius: 10px;
 }
-.menu div p a{
+
+.menu div p a {
 	color: black;
 }
 
-.katalog ul li{
-	position:absolute;
+/*.katalog ul li {
+	position: absolute;
 	background: rgba(254, 250, 224, 0.8);
 
 	max-width: 13%;
-	
+
 	display: none;
 	z-index: 111;
 }
 
-.katalog:hover ul li{
+.katalog:hover ul li {
 	display: flex;
 	flex-direction: column;
-}
+}*/
 
 .photos {
-	margin: 30px 20px 20px 20px;
-	display: block;
-	height: 70%;
+	margin: 20px;
+	max-width: 100%;
+	min-height: 70%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: scale-down;
+	/*height: 70%;
 	background: url('../img/flora1.jpeg') no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
-	object-fit: cover;
+	object-fit: cover;*/
 }
 
 
@@ -239,22 +255,23 @@ body {
 	margin: 20px;
 
 	background: #E9EDC9;
-    border-radius: 10px;
-	padding-top: 5px ;
+	border-radius: 10px;
+	padding-top: 5px;
 	padding-left: 10px;
 	font-size: 20px;
 }
 
-.catagory{
+.catagory {
 	height: 200px;
 }
-.filter{
+
+.filter {
 	height: 220px;
 }
 
-li{
+li {
 	margin: 5px;
-	float:right;
+	float: right;
 	height: 30px;
 	width: 75%;
 	background: rgba(212, 163, 115, 0.3);
@@ -262,27 +279,31 @@ li{
 
 	padding-left: 10px;
 }
-li:hover{
-	background:#D4A373
+
+li:hover {
+	background: #D4A373
 }
-.filter span{
+
+.filter span {
 	font-size: 16px;
 }
-.filter input{
+
+.filter input {
 	background: rgba(212, 163, 115, 0.3);
 	border-radius: 5px;
 	max-width: 80px;
 }
 
 
-.right{
+.right {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	width: 70%;
 }
-.right div{
+
+.right div {
 	display: block;
 	height: 350px;
 	width: 250px;
@@ -291,20 +312,23 @@ li:hover{
 	background: rgba(212, 163, 115, 0.3);
 	border-radius: 10px;
 }
-.item div{
+
+.item div {
 	max-height: 50%;
 	width: 88%;
-	
+
 	background: rgba(254, 250, 224, 0.8);
 	border-radius: 10px;
 }
-.item p{
+
+.item p {
 	margin-top: 20px;
 	padding-left: 30px;
 
 	font-size: 26px;
 }
-.item button{
+
+.item button {
 	margin: 30px 15px;
 	width: 88%;
 	height: 50px;
@@ -314,10 +338,12 @@ li:hover{
 
 	font-size: 24px;
 }
-.right div:hover{
-	background:#D4A373
+
+.right div:hover {
+	background: #D4A373
 }
-.item div:hover{
+
+.item div:hover {
 	background: rgba(254, 250, 224, 0.8);
 }
 
@@ -328,7 +354,7 @@ li:hover{
 	margin: 20px 0;
 }
 
-h3{
+h3 {
 	text-align: center;
 	font-size: 28px;
 	line-height: 33px;
@@ -336,7 +362,7 @@ h3{
 	margin-top: 10px;
 }
 
-h4{
+h4 {
 	text-align: center;
 	font-size: 24px;
 	line-height: 28px;
@@ -345,28 +371,30 @@ h4{
 	border-radius: 30px;
 	margin-bottom: 20px;
 }
-.del div{
+
+.del div {
 	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	padding:20px 50px;
+	padding: 20px 50px;
 	width: 49.5%;
 	font-size: 16px;
 }
 
-h5{
+h5 {
 	font-size: 20px;
 	line-height: 23px;
 	width: 100%;
 }
 
 
-.contacts{
+.contacts {
 	width: 100%;
 }
-.contacts div{
-	display:  inline-flex;
+
+.contacts div {
+	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -379,81 +407,99 @@ h5{
 	height: 180px;
 	font-size: 16px;
 }
-.contacts div p{
+
+.contacts div p {
 	padding: 10px;
 }
-.phone{
+
+.phone {
 	width: 28%;
 }
-.time_work{
+
+.time_work {
 	width: 28%;
 }
-.mail{
+
+.mail {
 	width: 38%;
 }
 
-@media (max-width: 528px) { 
-	.search_bar input{
+@media (max-width: 528px) {
+	.photos {
+		margin-top: 200px;
+	}
+
+	.search_bar input {
 		font-size: 10px;
 		height: 25px;
 	}
-	.login{
+
+	.login {
 		margin-left: 1%;
 	}
-	.menu{
+
+	.menu {
 		flex-direction: column;
 		max-width: 35%;
 	}
 
-	.main_body div{
+	.main_body div {
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
 	}
 
-	.left div{
+	.left div {
 		width: 88%;
 	}
-	.right div{
+
+	.right div {
 		width: 88%;
 	}
-	.del div{
+
+	.del div {
 		flex-direction: column;
 		min-width: 300px;
-		
+
 	}
-	.contacts div{
+
+	.contacts div {
 		display: flex;
 		flex-direction: column;
 		width: 95%;
 	}
 }
 
-@media (min-width:529px) and (max-width: 900px) { 
-	.left div{
+@media (min-width:529px) and (max-width: 900px) {
+	.left div {
 		width: 100%;
 	}
 
-	.filter{
+	.filter {
 		height: 250px;
 	}
-	
-	.right div{
+
+	.right div {
 		width: 300px;
 	}
-	.item div{
+
+	.item div {
 		width: 88%;
 	}
-	.del div{
+
+	.del div {
 		width: 49%;
 	}
-	.contacts div{
+
+	.contacts div {
 		height: 200px;
 	}
-	.phone{
+
+	.phone {
 		width: 40%;
 	}
-	.time_work{
+
+	.time_work {
 		width: 40%;
 	}
 }
