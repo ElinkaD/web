@@ -1,1 +1,1 @@
-[Website](https://github.com/ElinkaD/web/blob/main/laba_1_2/laba_1_2/index.html)
+[Website](http://ElinkaD.github.io/web/laba_1_2)
