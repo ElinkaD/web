@@ -1,1 +1,1 @@
-[Ссылка на сайт](file:///Users/elina/Documents/web/2022/laba_1_2/laba_1_2/index.html)
+[Website](https://github.com/ElinkaD/web/blob/main/laba_1_2/laba_1_2/index.html)
