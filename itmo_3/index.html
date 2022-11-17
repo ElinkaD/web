@@ -1,0 +1,104 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>3 lesson</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	</head>
+	<body>
+		<div id="container">
+			<input type="text" id="calcText" > <br>
+		</div>
+
+		<script>
+            function createButton(text, className) {
+                //создаем элемент <button></button>
+                const buttonNode = document.createElement("button");
+                //пишем текст внутри него
+                buttonNode.innerText = text;
+                buttonNode.classList.add(className);
+
+                return buttonNode;
+            }
+
+            //получаем элемент <div> с id container
+            const containerNode = document.getElementById("container");
+
+            for (let i = 0; i <= 9; i++) {
+                const buttonNode = createButton(i, "btn-number");
+                //добавляем его внутрь элемента в переменной containerNode
+                containerNode.appendChild(buttonNode);
+
+                if (i % 3 == 0) {
+                    const brNode = document.createElement("br");
+                    containerNode.appendChild(brNode);
+                }
+            }
+
+            const operationLabels = ["*", "-", "+", "/", "="];
+
+            for (let i = 0; i < operationLabels.length; i++) {
+                const buttonNode = createButton(operationLabels[i], "btn-operation");
+                //добавляем его внутрь элемента в переменной containerNode
+                containerNode.appendChild(buttonNode);
+            }
+
+            const calcInput = document.getElementById("calcText");
+            let buttons = document.querySelectorAll(".btn-number");
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].addEventListener("click", (e) => {
+                    let val = e.target.innerText;
+
+                    calcInput.value += val;
+                });
+            }
+
+			let operationButton = document.querySelectorAll(".btn-operation");
+
+			const currentValueInput = document.getElementById("currentValue");
+			const opSign = document.getElementById("op");
+
+			for (let i = 0; i < operationLabels.length; i++) {
+                operationLabels[i].addEventListener("click", (e) => {
+                    
+				currentValueInput.value = calcInput.value;
+				opSign.value = e.target.innerText;
+
+				calcInput.value = "";
+                });
+            }
+
+			document.getElementById("calc").addEventListener("click"), e => {
+				let currVal = parseInt(calcInput.value);
+				let oldVal = parseInt(currentValueInput.value);
+				let newVal = 0;
+
+				switch(opSign.value){
+					case "+":{
+						newVal = oldVal + currVal;
+						break;
+					}
+					case "-":{
+						newVal = oldVal - currVal;
+						break;
+					}
+					case "*":{
+						newVal = oldVal * currVal;
+						break;
+					}
+					case "/":{
+						newVal = oldVal / currVal;
+						break;
+					}
+					calcInput.value = newVal;
+				}
+			}
+        </script>
+	</body>
+</html>
