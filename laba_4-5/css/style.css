@@ -1,0 +1,520 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Tahoma';
+	font-size: 20px;
+	line-height: 21px;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+	padding: 2em 0em;
+	margin: auto;
+	width: 90%;
+	background: #CCD5AE;
+}
+
+.head {
+	max-height: 100px;
+	height: 15vw;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
+}
+
+
+.logo {
+	height: 100%;
+	width: 15%;
+	max-width: 100px;
+
+	background: rgba(254, 250, 224, 0.8);
+	border-radius: 15px;
+}
+
+.points {
+	height: 45%;
+	width: 85%;
+	padding-left: 2%;
+}
+
+
+.search {
+	display: block;
+	margin-bottom: 3%;
+}
+
+.search_bar {
+	background: rgba(254, 250, 224, 0.5);
+	border-radius: 10px;
+	width: 80%;
+	display: inline-block;
+}
+
+.search_bar input {
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	font-family: "Tahoma";
+	font-size: 18px;
+	line-height: 21px;
+	height: 35px;
+}
+
+.stroka {
+	background: transparent;
+	height: 100%;
+	width: 70%;
+	padding-left: 30px;
+}
+
+.search_but {
+	float: right;
+	height: 100%;
+	width: 20%;
+	text-align: center;
+	background: #FEFAE0CC;
+	border-radius: 10px;
+}
+
+.search_but:hover {
+	background: #D4A373;
+	color: white;
+}
+
+.login {
+	position: absolute;
+	display: inline-block;
+	margin-left: 7%;
+	border-radius: 50%;
+	width: 2.5em;
+	min-height: 2.5em;
+	background-color: rgba(254, 250, 224, 0.8);
+	
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.login a img{
+	margin: 15px
+}
+
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.menu div {
+	background: transparent;
+	min-width: 18%;
+
+	line-height: 40px;
+	text-align: center;
+
+}
+
+.menu div p {
+	background: rgba(254, 250, 224, 0.8);
+	border-radius: 10px;
+}
+
+.menu div p a {
+	color: black;
+}
+
+/*.katalog ul li {
+	position: absolute;
+	background: rgba(254, 250, 224, 0.8);
+
+	max-width: 13%;
+
+	display: none;
+	z-index: 111;
+}
+
+.katalog:hover ul li {
+	display: flex;
+	flex-direction: column;
+}*/
+
+.photos {
+	margin: 20px;
+	max-width: 100%;
+	max-height: 60%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: scale-down;
+}
+
+
+.main_body {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.left {
+	width: 30%;
+}
+
+.left div {
+	max-width: 100%;
+	margin: 20px;
+
+	background: #E9EDC9;
+	border-radius: 10px;
+	padding-top: 5px;
+	padding-left: 10px;
+	font-size: 20px;
+}
+
+.catagory {
+	height: 200px;
+}
+
+.filter {
+	height: 220px;
+}
+
+li {
+	margin: 5px;
+	float: right;
+	height: 30px;
+	width: 75%;
+	background: rgba(212, 163, 115, 0.3);
+	border-radius: 5px;
+
+	padding-left: 10px;
+}
+
+li:hover {
+	background: #D4A373
+}
+
+.filter span {
+	font-size: 16px;
+}
+
+.filter input {
+	background: rgba(212, 163, 115, 0.3);
+	border-radius: 5px;
+	max-width: 80px;
+}
+.left button{
+	margin: 20px 15px;
+	width: 88%;
+	height: 50px;
+
+	background: rgba(254, 250, 224, 0.7);
+	border-radius: 30px;
+
+	font-size: 24px;
+}
+
+
+.right {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 70%;
+}
+
+.right div {
+	display: block;
+	height: 350px;
+	width: 250px;
+	margin: 15px;
+
+	background: rgba(212, 163, 115, 0.3);
+	border-radius: 10px;
+}
+
+.item div{
+	max-height: 50%;
+	width: 88%;
+
+	background: rgba(254, 250, 224, 0.8);
+	border-radius: 10px;
+}
+
+.item p{
+	margin: 10px 0px;
+	padding-left: 30px;
+
+	font-size: 24px;
+}
+
+.item button{
+	margin: 2px 15px;
+	width: 88%;
+	height: 40px;
+
+	background: rgba(254, 250, 224, 0.7);
+	border-radius: 30px;
+
+	font-size: 24px;
+}
+.item img{
+	padding: 1px; 
+	width: 100%;
+	height: 100%;
+	height: 170px;
+	object-fit: contain;
+}
+
+.right div:hover {
+	background: #D4A373;
+}
+
+.item div:hover {
+	background: rgba(254, 250, 224, 0.8);
+}
+
+
+
+.methods_delivery {
+	background: #E9EDC9;
+	margin: 20px 0;
+}
+
+h3 {
+	text-align: center;
+	font-size: 28px;
+	line-height: 33px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+h4 {
+	text-align: center;
+	font-size: 24px;
+	line-height: 28px;
+	background: rgba(212, 163, 115, 0.5);
+	width: 100%;
+	border-radius: 30px;
+	margin-bottom: 20px;
+}
+
+.del div {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px 50px;
+	width: 49.5%;
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 20px;
+	line-height: 23px;
+	width: 100%;
+}
+
+
+.contacts {
+	width: 100%;
+}
+
+.contacts div {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+
+	margin: 10px;
+	background: rgba(254, 250, 224, 0.3);
+	border-radius: 10px;
+
+	height: 180px;
+	font-size: 16px;
+}
+
+.contacts div p {
+	padding: 10px;
+}
+
+.phone {
+	width: 28%;
+}
+
+.time_work {
+	width: 28%;
+}
+
+.mail {
+	width: 38%;
+}
+
+@media (max-width: 528px) {
+	.photos {
+		margin-top: 200px;
+	}
+
+	.search_bar input {
+		font-size: 10px;
+		height: 25px;
+	}
+
+	.login {
+		margin-left: 1%;
+	}
+
+	.menu {
+		flex-direction: column;
+		max-width: 35%;
+	}
+
+	.main_body div {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.left div {
+		width: 88%;
+	}
+
+	.right div {
+		width: 88%;
+	}
+
+	.del div {
+		flex-direction: column;
+		min-width: 300px;
+
+	}
+
+	.contacts div {
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+	}
+}
+
+@media (min-width:529px) and (max-width: 900px) {
+	.left div {
+		width: 100%;
+	}
+
+	.filter {
+		height: 250px;
+	}
+
+	.right div {
+		width: 300px;
+	}
+
+	.item div {
+		width: 88%;
+	}
+
+	.del div {
+		width: 49%;
+	}
+
+	.contacts div {
+		height: 200px;
+	}
+
+	.phone {
+		width: 40%;
+	}
+
+	.time_work {
+		width: 40%;
+	}
+}
