@@ -35,7 +35,7 @@
     $result = mysqli_query($mysql, $query);
 	$user = mysqli_fetch_assoc($result);
 ?>
-<p>Здравствуйте, <?= $user['name'] ?>. Чтобы выйти нажмите <a href="exit.php">здесь</a>.</p>
+<p>Здравствуйте, <?= $user['name'] ?>. Чтобы выйти из аккаунта нажмите <a href="exit.php">здесь</a>.</p>
 <form method="post" action="update_profile.php" name="signup-form">
     <p>Редактирование профиля</p>
     <div class="form-element">
