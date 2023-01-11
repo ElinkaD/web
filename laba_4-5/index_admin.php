@@ -26,11 +26,11 @@ $xml = simplexml_load_file("data.xml");
 						<input type="submit" class="search_but" value="Поиск"></p>
 					</form>
 				</div>
-				<div class="login"><a href="http://localhost/laba_4/login.php"><img src="img/icon.svg" alt=""></a></div>
+				<div class="login"><a href="http://localhost/laba_4-5/login.php"><img src="img/icon.svg" alt=""></a></div>
 			</div>
 			<div class="menu">
 				<div class="main">
-					<p><a href="http://localhost/laba_4/index.php">Главная</a></p>
+					<p><a href="http://localhost/laba_4-5/index.php">Главная</a></p>
 				</div>
 				<div class="katalog">
 					<p> Каталог</p>					
@@ -72,7 +72,7 @@ $xml = simplexml_load_file("data.xml");
 					<li>другое</li>
 				</ul>
 			</div>
-			<button><a href="http://localhost/laba_4/create.php">Создать новый продукт</a></button>
+			<button><a href="http://localhost/laba_4-5/create.php">Создать новый продукт</a></button>
 		</div>
 		<div class="right">
 			<?php foreach($xml->product as $product) { ?>
@@ -85,15 +85,6 @@ $xml = simplexml_load_file("data.xml");
 					<button><a href="delete.php?id=<?php echo $product['id'] ?>">Удалить</a></button>
 				</div>
 			<?php } ?>
-
-			<!-- <div class="item">
-				<div class="product" id="b1"></div>
-				<p>price</p>
-				<p>name</p>
-				<button><a href="update.php?id=<?php echo $product['id'] ?>">Изменить</a></button>
-				<button><a href="delete.php?id=<?php echo $product['id'] ?>">Удалить</a></button>
-			</div> -->
-
 		</div>
 		<div class="methods_delivery" id="d1">
 			<div><h3>Способы доставки</h3></div>

@@ -1,24 +1,25 @@
 <?php 
-    // 
-    if (isset($_GET['id'])) {
+    $password = filter_var(trim($_POST['password']),FILTER_SANITIZE_STRING);
+    $password = md5($password."ElinaTheBest55555");
+    $id = $_COOKIE['id'];
 
-        // id из запроса
-        $id = $_GET['id'];
+    $link = new mysqli('localhost','root','root','people');
 
-        $xml = simplexml_load_file("data.xml");
-
-        $i = 0; 
-
-
-        foreach($xml->product as $product) {
-            if ($product['id'] == $id) {
-                unset($xml->product[$i]);
-                break;
-            }
-            $i++;
-        }
-
-        $xml->saveXML("data.xml");
-        echo "<script>location.href='index_admin.php'</script>";
+    if($password == $_COOKIE['pass']){
+        $query = "DELETE FROM users WHERE id='$id'";
+        mysqli_query($link, $query);
+        setcookie('pass',"", time() - 3600, "/");
+        setcookie('id', "", time() - 3600, "/");
+        echo "<script>
+        alert('Аккаунт удален.');
+        location.href = 'index.php';
+        </script>";
     }
+    else{
+        echo "<script>
+        alert('Пароль введен неверно!');
+        location.href = 'login.php';
+        </script>";
+    }
+    $link->close();
 ?>

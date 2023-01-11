@@ -16,7 +16,7 @@
     </div>
     <div class="form-element">
         <label>Имя</label>
-        <input type="text" name="username" required />
+        <input type="text" name="name" required />
     </div>
     <div class="form-element">
         <label>Пароль</label>
@@ -24,8 +24,8 @@
     </div>
     <button type="submit" name="register" value="register">Зарегестрировать</button>
     <br><br>
-    <a href="http://localhost/laba_4/login.php">Уже есть аккаунт</a>
-    <a href="http://localhost/laba_4/index.php">Назад</a>
+    <a href="http://localhost/laba_4-5/login.php">Уже есть аккаунт</a>
+    <a href="http://localhost/laba_4-5/index.php">Назад</a>
 </form>
 
 </body>
